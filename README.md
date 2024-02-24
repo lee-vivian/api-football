@@ -3,7 +3,7 @@
 TLDR: I got tired of wasting time scrolling through Google and skimming random websites just to find out when and where my favorite teams were playing and made this app to make it easier to follow my favorite leagues and clubs #COYGS
 
 ## Installation Steps
-1. Clone the repository
+1. Clone the repository. Be sure to clone using SSH so you can push back into the repository using the SSH key stored in your GitHub account settings.
 
 2. Create a virtual env
    ```
