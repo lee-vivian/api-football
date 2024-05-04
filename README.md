@@ -1,6 +1,6 @@
 # api-football
 
-TLDR: I got tired of wasting time scrolling through Google and skimming random websites just to find out when and where my favorite teams were playing and made this app to make it easier to follow my favorite leagues and clubs #COYGS
+TLDR: I got tired of wasting time scrolling through Google and skimming random websites just to find out when and where my favorite teams were playing and made this app to make it easier to follow my favorite leagues and clubs #COYG
 
 ## Installation Steps
 1. Clone the repository. Be sure to clone using SSH so you can push back into the repository using the SSH key stored in your GitHub account settings.
@@ -41,7 +41,7 @@ TLDR: I got tired of wasting time scrolling through Google and skimming random w
 Run a local python server that will allow you to send requests to the api-football repository and get responses back in JSON-format
    ```
    python3 server.py
-   curl localhost:5000/status
+   curl localhost:5000/status (or replace localhost with whatever IP address your server is running on)
    ```
 
 ## Steps for Developers
