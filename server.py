@@ -44,5 +44,24 @@ def get_status():
 def get_leagues():
     return get_request('/leagues')
 
+@app.route('/teams', methods=['GET'])
+def get_teams():
+    league_id = request.args.get('league')
+    season_year = request.args.get('season')
+    return get_request(f'/teams?league={league_id}&season={season_year}')
+
+@app.route('/fixtures', methods=['GET'])
+def get_fixtures():
+    team_id = request.args.get('team')
+    league_id = request.args.get('league')
+    season_year = request.args.get('season')
+    return get_request(f'/fixtures?team={team_id}&league={league_id}&season={season_year}')
+
+@app.route('/standings', methods=['GET'])
+def get_standings():
+    league_id = request.args.get('league')
+    season_year = request.args.get('season')
+    return get_request(f'/standings?league={league_id}&season={season_year}')
+
 if __name__ == '__main__':
     app.run(debug=True)
